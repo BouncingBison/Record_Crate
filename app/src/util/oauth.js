@@ -21,7 +21,7 @@ const oauthBaseUrls = {
 };
 
 // oauth redirect URL
-const redirectBase = (build.prod ? 'https://mern-app-starter.herokuapp.com' : 'http://localhost:3000');
+const redirectBase = (build.prod ? 'https://record-crate.herokuapp.com' : 'http://localhost:3000');
 const oauthRedirectUrl = (network) => (`${redirectBase}/login/${network}`);
 
 // generate an oauth URL for the given network
