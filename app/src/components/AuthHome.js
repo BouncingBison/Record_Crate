@@ -35,7 +35,6 @@ class AuthHome extends React.Component {
       <Accept></Accept> 
       </div> 
       </div>
-
     );
   }
 }
