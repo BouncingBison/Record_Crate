@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import api from '../util/api';
+import Accept from './dropzone'; 
 
 class AuthHome extends React.Component {
   constructor(props) {
@@ -30,7 +31,11 @@ class AuthHome extends React.Component {
         <h2>Authenticated Home</h2>
         <p>Hello, {user.name}!</p>
         <p>Server message: <code>{message}</code></p>
+      <div>
+      <Accept></Accept> 
+      </div> 
       </div>
+
     );
   }
 }
