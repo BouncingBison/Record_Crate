@@ -1,6 +1,6 @@
 // local storage for persisting user data
 
-const USER_INFO_KEY = 'mern_app_user_info';
+const USER_INFO_KEY = 'record_crate_user_info';
 
 const setUserInfo = (userInfo) => {
   localStorage.setItem(USER_INFO_KEY, JSON.stringify(userInfo));

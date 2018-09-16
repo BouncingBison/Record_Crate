@@ -9,11 +9,11 @@ const userSchema = new mongoose.Schema({
     id:         { type: Number, unique: true, sparse: true },
     profileUrl: { type: String },
     avatarUrl:  { type: String }
-  },
-  facebook: {
-    id:         { type: Number, unique: true, sparse: true },
-    avatarUrl:  { type: String }
   }
+  // facebook: {
+  //   id:         { type: Number, unique: true, sparse: true },
+  //   avatarUrl:  { type: String }
+  // }
 });
 
 userSchema.pre('save', function(next) {
@@ -37,10 +37,10 @@ userSchema.methods.toUserResponse = function() {
     github: {
       profileUrl: this.github.profileUrl,
       avatarUrl: this.github.avatarUrl
-    },
-    facebook: {
-      avatarUrl: this.facebook.avatarUrl
     }
+    // facebook: {
+    //   avatarUrl: this.facebook.avatarUrl
+    // }
   };
 }
 

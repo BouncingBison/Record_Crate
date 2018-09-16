@@ -30,8 +30,8 @@ const oauthUrl = (network, state) => {
     case clients.github:
       return `${oauthBaseUrls.github}?client_id=${clientIds.github}&redirect_uri=${oauthRedirectUrl(network)}&state=${state}`;
 
-    case clients.facebook:
-      return `${oauthBaseUrls.facebook}?client_id=${clientIds.facebook}&redirect_uri=${oauthRedirectUrl(network)}&state=${state}`;
+    // case clients.facebook:
+    //   return `${oauthBaseUrls.facebook}?client_id=${clientIds.facebook}&redirect_uri=${oauthRedirectUrl(network)}&state=${state}`;
 
     default:
       console.error('Unknown network: ' + network);
